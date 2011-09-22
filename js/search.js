@@ -87,7 +87,7 @@ $(document).ready(function () {
                                  .append($("<div/>").addClass("alert-message").html(s))
                                  .addInfo(x.value.info));
                     } else if (x.exception) {
-                        var s = "exception <strong>" + x.exception.name + "</strong>";
+                        var s = "exception <strong>" + stripModule(x.exception.name) + "</strong>";
                         d.append($("<div />")
                                  .addClass('sig-exception')
                                  .addClass("alert-message block-message info")
